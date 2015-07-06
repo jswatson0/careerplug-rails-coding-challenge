@@ -1,0 +1,9 @@
+bug: After clicking 'All Jobs' in navbar, comment form not rendering after click 'Add a comment'.
+  - fixed: added 'jquery-turbolinks' gem to fix conflict with `document.ready` and turbo-links.
+
+bug: Search for 'software developer' does not find 'developer' or 'rails developer' as a result. This is an issue
+     with passing in multiple strings to the search query.
+
+improvement: Utilize Bootstrap grid system and improve responsiveness.
+
+

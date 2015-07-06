@@ -15,4 +15,43 @@
 @import "formtastic";
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "partials/*"
+@import "partials/*";
+
+html, body {
+  height: 100%;
+}
+
+body a {
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -100px;
+  padding-bottom: 200px;
+}
+
+.container {
+  width: 75%;
+}
+
+.nav-container {
+  width: 90% !important;
+  margin: 0 auto;
+}
+
+.alert {
+  width: inherit;
+}
+
+.formtastic input {
+  margin-bottom: 5px;
+}
+
+.footer {
+  height: 50px;
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  padding-left: 15px;
+}

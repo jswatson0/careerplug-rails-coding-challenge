@@ -1,0 +1,3 @@
+$('.comments').removeClass('hidden');
+$('.comments').prepend('<%= escape_javascript(render :partial => @comment) %>');
+$(".comment-body textarea").val('');

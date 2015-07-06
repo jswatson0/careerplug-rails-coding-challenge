@@ -1,5 +1,13 @@
-<h1>All jobs</h1>
-<% @jobs.each do |job| %>
-  <h4><%= job.name %></h4>
-  <p><%= job.description.html_safe %></p>
-<% end %>
+<div id="job-list">
+  <h1>Jobs</h1>
+  <% @jobs.each do |job| %>
+    <div class="job-card">
+      <%= render :partial => job %>
+      <%= render :partial => 'comments/form', :locals => {:job => job}%>
+      <div class="comments">
+        <%= render :partial => job.comments.order(created_at: :desc) %>
+      </div>
+      <a class="comment-button">Add a Comment</a>
+    </div>
+  <% end %>
+</div>

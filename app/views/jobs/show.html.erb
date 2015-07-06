@@ -1,2 +1,6 @@
-<h1>Jobs#show</h1>
-<p>Find me in app/views/jobs/show.html.erb</p>
+<%= render :partial => @job %>
+
+<h2>Comments</h2>
+<div id="comments">
+  <%= render :partial => @job.comments %>
+</div>
